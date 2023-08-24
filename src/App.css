@@ -1,38 +1,119 @@
-.App {
+@media screen and (min-width: 375px){
+  .header-text h2:nth-child(1){
+    font-size: 1.5rem;
+  }
+  .header-text h2:nth-child(2){
+    font-size: 1.5rem;
+  }
+  .content-container{
+    height: 55rem;
+  }
+  .header-text p{
+    margin-left: 7.5%;
+    margin-bottom: 2.5rem;
+    width: 85%;
+  }
+  .card{
+    width: 70%;
+    margin-left: 7.5%;
+    border-radius: 10px;
+    padding: 1rem 2rem 2rem;
+  }
+  #supervisorCard{
+    margin-top: 1.5rem;
+  }
+  #teamBuilderCard{
+
+    margin-top: 1.5rem;
+  }
+  #calculatorCard{
+    margin-top: 1.5rem;
+  }
+  #karmaCard{
+    margin-top: 1.5rem;
+  }
+  .attribution{
+    margin-top: 50.5rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .content-container{
+    height: 50rem;
+  }
+  .header-text h2:nth-child(2){
+    font-size: 2rem;
+  }
+  .header-text p{
+    margin-left: 30%;
+    width: 40%;
+  }
+  .card{
+    width: 20%;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    padding: 1rem 2rem 2rem;
+  }
+  #supervisorCard{
+    margin-left: 15%;
+    margin-top: 12.5rem;
+  }
+  #teamBuilderCard{
+    margin-top: 2.5rem;
+    margin-left: 40%;
+  }
+  #calculatorCard{
+    margin-top: 12.5rem;
+    margin-left: 65%;
+  }
+  #karmaCard{
+    margin-top: 20rem;
+    margin-left: 40%;
+  }
+  .attribution{
+    margin-top: 2.5rem;
+  }
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: hsl(0, 0%, 89%);
+}
+.header-text{
   text-align: center;
+  margin-top: 2.5rem;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-text h2:nth-child(1){
+  font-weight: 200;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-text h2:nth-child(2){
+  font-weight: 600;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header-text p{
+  font-weight: 400;
+  color: hsl(229, 6%, 66%);
 }
-
-.App-link {
-  color: #61dafb;
+.card{
+  background-color: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card img{
+  margin-left: 80%;
+}
+#supervisorCard{
+  border-top: 5px solid hsl(180, 62%, 55%);
+}
+#teamBuilderCard{
+  border-top: 5px solid hsl(0, 78%, 62%);
+}
+#calculatorCard{
+  border-top: 5px solid  hsl(212, 86%, 64%);
+}
+#karmaCard{
+  border-top: 5px solid hsl(34, 97%, 64%);
+}
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
 }
